@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;700&display=swap');
+::-webkit-scrollbar{
+  width: 1em;
+}
+::-webkit-scrollbar-track{
+  background: var(--com-bg);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+  width: 0.3em;
+  border-radius: 8px;
+  border: 3px solid var(--com-bg);
+}
+:root {
+  --primary-color: #F86F03;
+  --secondary-color: #000000;
+  --com-bg: #ffffff;
+  --button_radius: 0.5em;
+  --button_color: #F86F03;
+  --button_outline_color: #F86F03;
+}
+html{
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* .text-main-100:hover {
+  --tw-text-opacity: 1;
+  color: var(--primary-color);
+}
+.text-main-100 {
+  --tw-text-opacity: 1;
+  color: var(--secondary-color);
+} */
+
+/*contactForm*/
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form input {
+  outline: 0;
+  border: 1px solid var(--primary-color);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid var(--primary-color);
+}
+.buttonContact {
+  background-color: var(--button_color);
+  color: white;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 0 0 black;
+  width: 100%;
+
+}
+
+.buttonContact:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+  color: var(--secondary-color);
+
+};
+
+.buttonContact:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+};
+/*contactForm*/
+
+/*skills color*/
+.imCont {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  /* animation: scroll-image 25s linear infinite; */
+}
+.imCont:hover, .scroll-image:hover{
+  animation: scroll-image 20s linear infinite;
+}
+
+@keyframes scroll-image {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-70%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
